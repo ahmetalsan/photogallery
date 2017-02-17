@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		681ECBBF1E5754F70035A82D /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681ECBBE1E5754F70035A82D /* BaseProvider.swift */; };
+		681ECBC11E57551B0035A82D /* FlickrProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681ECBC01E57551B0035A82D /* FlickrProvider.swift */; };
+		681ECBC41E5755650035A82D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681ECBC31E5755650035A82D /* Photo.swift */; };
+		681ECBCA1E5758720035A82D /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681ECBC91E5758720035A82D /* ImageDownloader.swift */; };
 		68BB9B011E57506A00089803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB9B001E57506A00089803 /* AppDelegate.swift */; };
 		68BB9B031E57506A00089803 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB9B021E57506A00089803 /* ViewController.swift */; };
 		68BB9B061E57506A00089803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BB9B041E57506A00089803 /* Main.storyboard */; };
@@ -17,6 +21,10 @@
 
 /* Begin PBXFileReference section */
 		193568BB3270B8182DD95D76 /* Pods-PhotoGallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoGallery.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoGallery/Pods-PhotoGallery.release.xcconfig"; sourceTree = "<group>"; };
+		681ECBBE1E5754F70035A82D /* BaseProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProvider.swift; sourceTree = "<group>"; };
+		681ECBC01E57551B0035A82D /* FlickrProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrProvider.swift; sourceTree = "<group>"; };
+		681ECBC31E5755650035A82D /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		681ECBC91E5758720035A82D /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		68BB9AFD1E57506A00089803 /* PhotoGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BB9B001E57506A00089803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68BB9B021E57506A00089803 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +48,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		681ECBBC1E5754E20035A82D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				681ECBC21E57555B0035A82D /* Generics */,
+				681ECBBD1E5754E70035A82D /* Providers */,
+				681ECBC91E5758720035A82D /* ImageDownloader.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		681ECBBD1E5754E70035A82D /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				681ECBC01E57551B0035A82D /* FlickrProvider.swift */,
+				681ECBBE1E5754F70035A82D /* BaseProvider.swift */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
+		681ECBC21E57555B0035A82D /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				681ECBC31E5755650035A82D /* Photo.swift */,
+			);
+			name = Generics;
+			sourceTree = "<group>";
+		};
+		681ECBC51E5757560035A82D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		68BB9AF41E57506900089803 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +103,8 @@
 		68BB9AFF1E57506A00089803 /* PhotoGallery */ = {
 			isa = PBXGroup;
 			children = (
+				681ECBC51E5757560035A82D /* Extensions */,
+				681ECBBC1E5754E20035A82D /* API */,
 				68BB9B001E57506A00089803 /* AppDelegate.swift */,
 				68BB9B021E57506A00089803 /* ViewController.swift */,
 				68BB9B041E57506A00089803 /* Main.storyboard */,
@@ -212,7 +256,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				68BB9B031E57506A00089803 /* ViewController.swift in Sources */,
+				681ECBC11E57551B0035A82D /* FlickrProvider.swift in Sources */,
+				681ECBBF1E5754F70035A82D /* BaseProvider.swift in Sources */,
 				68BB9B011E57506A00089803 /* AppDelegate.swift in Sources */,
+				681ECBCA1E5758720035A82D /* ImageDownloader.swift in Sources */,
+				681ECBC41E5755650035A82D /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +430,7 @@
 				68BB9B111E57506A00089803 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
