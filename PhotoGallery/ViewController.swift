@@ -14,9 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        FlickrProvider.getPhotosByTag(tag: "moda") { photos in
+        //FlickrProvider.getPhotosByTag(tag: "moda") { photos in
             
-        }
+        //}
     }
 
     override func didReceiveMemoryWarning() {

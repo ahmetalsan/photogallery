@@ -11,12 +11,12 @@ import Alamofire
 
 class FlickrProvider: BaseProvider {
     
-    static let URL: String = "https://api.flickr.com/services/rest"
-    static let API_KEY: String = "93784dfecd6f390c159f7dd1dbb1ba0c"
-    static let METHOD: String = "flickr.photos.search"
-    static let FORMAT: String = "json"
+    let URL: String = "https://api.flickr.com/services/rest"
+    let API_KEY: String = "93784dfecd6f390c159f7dd1dbb1ba0c"
+    let METHOD: String = "flickr.photos.search"
+    let FORMAT: String = "json"
     
-    static func getPhotosByTag(tag: String, callback:(([Photo]) -> Void)) {
+    func getPhotosByTag(tag: String, callback:(([Photo]) -> Void)) {
         //sample flickr get request: https://api.flickr.com/services/rest/?api_key=93784dfecd6f390c159f7dd1dbb1ba0c&method=flickr.photos.search&tags=moda&format=rest
         
         let parameters: Parameters = [
@@ -38,4 +38,18 @@ class FlickrProvider: BaseProvider {
             }
         }
     }
+    
+    private func downloadImage(farmId: String, serverId: String, id: String, secret: String, callback:((UIImage) -> Void)) {
+        //flickr farm pattern: https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
+        
+        let url = "https://farm\(farmId).staticflickr.com/\(serverId)/\(id)_\(secret).jpg"
+
+        
+        
+        //ImageDownloader.downloadImage(url: urlPattern) { image in
+            
+        //}
+    }
+    
+    
 }
