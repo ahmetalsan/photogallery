@@ -12,6 +12,8 @@ import SwiftyJSON
 
 class FlickrProvider: BaseProvider {
     
+    //https://www.flickr.com/services/api/
+    
     let API_URL: String = "https://api.flickr.com/services/rest"
     let API_KEY: String = "93784dfecd6f390c159f7dd1dbb1ba0c"
     let METHOD: String = "flickr.photos.search"

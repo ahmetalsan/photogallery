@@ -12,6 +12,15 @@
 		681ECBC41E5755650035A82D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681ECBC31E5755650035A82D /* Photo.swift */; };
 		681ECBCA1E5758720035A82D /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681ECBC91E5758720035A82D /* ImageDownloader.swift */; };
 		684928121E5B030F008405F6 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684928111E5B030F008405F6 /* PhotoViewCell.swift */; };
+		686186991E5B10950007ACEA /* STArchLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686186901E5B10950007ACEA /* STArchLoading.swift */; };
+		6861869A1E5B10950007ACEA /* STBouncyPreloaderLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686186911E5B10950007ACEA /* STBouncyPreloaderLoading.swift */; };
+		6861869B1E5B10950007ACEA /* STGlassesLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686186921E5B10950007ACEA /* STGlassesLoading.swift */; };
+		6861869C1E5B10950007ACEA /* STSubmitLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686186931E5B10950007ACEA /* STSubmitLoading.swift */; };
+		6861869D1E5B10950007ACEA /* STTriangleLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686186941E5B10950007ACEA /* STTriangleLoading.swift */; };
+		6861869E1E5B10950007ACEA /* STWalkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686186951E5B10950007ACEA /* STWalkLoading.swift */; };
+		6861869F1E5B10950007ACEA /* STZhiHuLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686186961E5B10950007ACEA /* STZhiHuLoading.swift */; };
+		686186A01E5B10950007ACEA /* STLoadingable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686186971E5B10950007ACEA /* STLoadingable.swift */; };
+		686186A11E5B10950007ACEA /* STLoadingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686186981E5B10950007ACEA /* STLoadingGroup.swift */; };
 		68BB9B011E57506A00089803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB9B001E57506A00089803 /* AppDelegate.swift */; };
 		68BB9B031E57506A00089803 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB9B021E57506A00089803 /* GalleryViewController.swift */; };
 		68BB9B061E57506A00089803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BB9B041E57506A00089803 /* Main.storyboard */; };
@@ -29,6 +38,15 @@
 		681ECBC31E5755650035A82D /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		681ECBC91E5758720035A82D /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		684928111E5B030F008405F6 /* PhotoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
+		686186901E5B10950007ACEA /* STArchLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STArchLoading.swift; sourceTree = "<group>"; };
+		686186911E5B10950007ACEA /* STBouncyPreloaderLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STBouncyPreloaderLoading.swift; sourceTree = "<group>"; };
+		686186921E5B10950007ACEA /* STGlassesLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STGlassesLoading.swift; sourceTree = "<group>"; };
+		686186931E5B10950007ACEA /* STSubmitLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSubmitLoading.swift; sourceTree = "<group>"; };
+		686186941E5B10950007ACEA /* STTriangleLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STTriangleLoading.swift; sourceTree = "<group>"; };
+		686186951E5B10950007ACEA /* STWalkLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STWalkLoading.swift; sourceTree = "<group>"; };
+		686186961E5B10950007ACEA /* STZhiHuLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STZhiHuLoading.swift; sourceTree = "<group>"; };
+		686186971E5B10950007ACEA /* STLoadingable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STLoadingable.swift; sourceTree = "<group>"; };
+		686186981E5B10950007ACEA /* STLoadingGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STLoadingGroup.swift; sourceTree = "<group>"; };
 		68BB9AFD1E57506A00089803 /* PhotoGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BB9B001E57506A00089803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68BB9B021E57506A00089803 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +100,38 @@
 			name = Generics;
 			sourceTree = "<group>";
 		};
+		6861868D1E5B10860007ACEA /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				6861868E1E5B10950007ACEA /* STLoadingGroup */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		6861868E1E5B10950007ACEA /* STLoadingGroup */ = {
+			isa = PBXGroup;
+			children = (
+				6861868F1E5B10950007ACEA /* Loading */,
+				686186971E5B10950007ACEA /* STLoadingable.swift */,
+				686186981E5B10950007ACEA /* STLoadingGroup.swift */,
+			);
+			path = STLoadingGroup;
+			sourceTree = "<group>";
+		};
+		6861868F1E5B10950007ACEA /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				686186901E5B10950007ACEA /* STArchLoading.swift */,
+				686186911E5B10950007ACEA /* STBouncyPreloaderLoading.swift */,
+				686186921E5B10950007ACEA /* STGlassesLoading.swift */,
+				686186931E5B10950007ACEA /* STSubmitLoading.swift */,
+				686186941E5B10950007ACEA /* STTriangleLoading.swift */,
+				686186951E5B10950007ACEA /* STWalkLoading.swift */,
+				686186961E5B10950007ACEA /* STZhiHuLoading.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
 		68BB9AF41E57506900089803 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +159,7 @@
 				68D1CF241E5B0A5100ACD556 /* GalleryDetailViewController.swift */,
 				684928111E5B030F008405F6 /* PhotoViewCell.swift */,
 				68BB9B041E57506A00089803 /* Main.storyboard */,
+				6861868D1E5B10860007ACEA /* Libraries */,
 			);
 			path = PhotoGallery;
 			sourceTree = "<group>";
@@ -264,15 +315,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6861869E1E5B10950007ACEA /* STWalkLoading.swift in Sources */,
 				684928121E5B030F008405F6 /* PhotoViewCell.swift in Sources */,
 				68BB9B031E57506A00089803 /* GalleryViewController.swift in Sources */,
 				68D1CF251E5B0A5100ACD556 /* GalleryDetailViewController.swift in Sources */,
+				6861869D1E5B10950007ACEA /* STTriangleLoading.swift in Sources */,
 				681ECBC11E57551B0035A82D /* FlickrProvider.swift in Sources */,
+				6861869A1E5B10950007ACEA /* STBouncyPreloaderLoading.swift in Sources */,
+				686186A11E5B10950007ACEA /* STLoadingGroup.swift in Sources */,
+				6861869C1E5B10950007ACEA /* STSubmitLoading.swift in Sources */,
+				686186A01E5B10950007ACEA /* STLoadingable.swift in Sources */,
 				681ECBBF1E5754F70035A82D /* BaseProvider.swift in Sources */,
 				68BB9B011E57506A00089803 /* AppDelegate.swift in Sources */,
 				681ECBCA1E5758720035A82D /* ImageDownloader.swift in Sources */,
+				6861869B1E5B10950007ACEA /* STGlassesLoading.swift in Sources */,
+				6861869F1E5B10950007ACEA /* STZhiHuLoading.swift in Sources */,
 				681ECBC41E5755650035A82D /* Photo.swift in Sources */,
 				68D1CF271E5B0D3E00ACD556 /* PinterestProvider.swift in Sources */,
+				686186991E5B10950007ACEA /* STArchLoading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

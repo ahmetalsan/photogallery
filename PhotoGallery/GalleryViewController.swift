@@ -15,17 +15,25 @@ class GalleryViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let loadingGroup = STLoadingGroup(side: 50, style: .zhihu)
+        loadingGroup.show(view)
+        loadingGroup.startLoading()
+        
         let flickrProvider = FlickrProvider()
         flickrProvider.getPhotosByTag(tag: "moda") { photos in
+            loadingGroup.stopLoading()
             self.photos = photos
             self.collectionView?.reloadData()
         }
         
+        makeEqualSizeOfCells(horizontalCellCount: 3)
+    }
+    
+    func makeEqualSizeOfCells(horizontalCellCount: Int) {
         let screenWidth = UIScreen.main.bounds.width
-        
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        layout.itemSize = CGSize(width: screenWidth/3, height: screenWidth/3)
+        layout.itemSize = CGSize(width: screenWidth/CGFloat(horizontalCellCount), height: screenWidth/CGFloat(horizontalCellCount))
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         collectionView!.collectionViewLayout = layout

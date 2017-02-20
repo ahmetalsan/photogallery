@@ -20,7 +20,6 @@ class ImageDownloader {
     static func downloadImage(url: URL, callback:@escaping ((UIImage) -> Void)) {
         getDataFromUrl(url: url) { (data, response, error)  in
             guard let data = data, error == nil else { return }
-            print(response?.suggestedFilename ?? url.lastPathComponent)
             DispatchQueue.main.async() { () -> Void in
                 callback(UIImage(data: data)!)
             }
