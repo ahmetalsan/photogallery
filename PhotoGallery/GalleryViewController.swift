@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GalleryViewController.swift
 //  PhotoGallery
 //
 //  Created by Ahmet Alsan on 17/02/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UICollectionViewController {
+class GalleryViewController: UICollectionViewController {
 
     var photos:[Photo]?
     
@@ -37,17 +37,19 @@ class ViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath as IndexPath) as! PhotoCell
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath as IndexPath) as! PhotoViewCell
+        cell.photo = photos?[indexPath.row]
         cell.imageView.image = photos?[indexPath.row].image
         
         return cell
     }
     
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("You selected cell #\(indexPath.item)!")
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! GalleryDetailViewController
+        let photoCell = sender as! PhotoViewCell
+        
+        vc.photo = photoCell.photo
     }
-
 
 }
 
