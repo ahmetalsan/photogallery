@@ -14,11 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //FlickrProvider.getPhotosByTag(tag: "moda") { photos in
+        let flickrProvider = FlickrProvider()
+        flickrProvider.getPhotosByTag(tag: "moda") { photos in
             
-        //}
+        }
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
